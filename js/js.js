@@ -1,6 +1,6 @@
 menu();
 autoSlider();
-readMore();
+
 
 
 
@@ -10,8 +10,10 @@ readMore();
 window.onload = function () {
     document.querySelector('.tabs-header').addEventListener('click', fTabs);
     document.querySelector('.menu-down').addEventListener('click', footerTabs);
+    document.querySelector('#menu-cont').addEventListener('click', menuContacts);
     var tabH = document.getElementsByClassName('tab-h');
     var tabD = document.getElementsByClassName('menu-down-a');
+    var tabM = document.getElementsByClassName('menu-sec');
     function fTabs(event) {
         console.log(event);
         if (event.target.className == 'tab-h') {
@@ -64,7 +66,11 @@ window.onload = function () {
             }
         }
     }
+
 }
+
+
+
 
  function lets () {
     var startGo = document.getElementById('gostart').onclick = function () {
@@ -77,13 +83,13 @@ window.onload = function () {
         if (startGo = true){
             // open.style.display = 'none';
             open.style.height = 0;
+            open.style.opacity = 0;
             //open.style.width = 0;
             open.style.transition = 'all ease .4s';
             text_hide.style.left = -99999 + 'px';
             header.style.right = 0;
             // header.style.opacity = 1;
             text_hide.style.transition = 'all ease .4s';
-            main_cont.style.display = 'block';
             main_cont.style.transition = 'all ease 3s';
             footer.style.display = 'block';
             // menu_mob.style.left = -300 + 'px';
@@ -139,6 +145,33 @@ function menu() {
     }
 }
 
+function menuContacts(event) {
+    console.log(event);
+    var dataHov = document.getElementsByClassName('tab-h');
+    var dataCont = event.target.getAttribute('type');
+    var tabBod =document.getElementsByClassName('tab-b');
+    for (var i=2; i < tabBod.length; i++ ) {
+    if (dataCont == 2) {
+        tabBod[2].style.display = 'block';
+        tabBod[0].style.display = 'none';
+        tabBod[1].style.display = 'none';
+        dataHov[1].classList.removeClass('active');
+        dataHov[2].classList.removeClass('active');
+    }
+    else {
+        tabBod[0].style.display = 'none';
+        tabBod[1].style.display = 'none';
+        tabBod[2].style.display = 'block';
+
+    }
+    }
+
+
+    // var contacts = document.getElementById('contactss');
+
+}
+
+
 
 function readMore() {
 
@@ -147,7 +180,7 @@ function readMore() {
      document.getElementById('morea2').onclick = hideText;
 
     function showText() {
-        document.querySelector('.aboutbody').style.height = 500 + 'px';
+        document.querySelector('.aboutbody').style.height = 'auto';
         document.querySelector('#morea').style.display = 'none';
         document.querySelector('#morea2').style.display = 'block';
 
@@ -161,8 +194,9 @@ function readMore() {
 
 
     }
-}
 
+}
+readMore();
 
 
 

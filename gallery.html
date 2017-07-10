@@ -28,6 +28,7 @@
             <div class="col-lg-4">
                 <div id="menu">
                     <ul>
+                        <li class="menu-sec"><a href="index.html">Main</a></li>
                         <li class="menu-sec"><a href="#">About</a></li>
                         <li class="menu-sec"><a href="gallery.html">Photo</a></li>
                         <li class="menu-sec"><a href="#">Contacs</a></li>
@@ -42,10 +43,105 @@
         <div class="social"></div>
     </div>
 </header>
-<div class="clear"></div>
+<div id="main-cont">
+
+    <div class="tab-b">
+
+        <div id="slider">
+
+
+            <div id="polosa">
+                <img src="img/1.png" alt="">
+                <img src="img/2.png" alt="">
+                <img src="img/3.png" alt="">
+                <img src="img/4.png" alt="">
+                <img src="img/5.png" alt="">
+            </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda beatae eveniet itaque iusto laborum mollitia. Animi atque cum ea eius error fugit laboriosam laudantium, magni nesciunt, quod repellat vel!</p>
+        <p><a href="gallery.html" class="more" id="more" >Подробнее...</a></p>
+    </div>
+    <div class="tab-b">
+        <h1>Мои контакы</h1>
+        <p>E-mail: <a class="contm" href="mailto:sergey.denisyuk@gmail.com">Sergey.denisyuk@gmail.com</a></p>
+        <p>Phone: <a class="contm" href="telto:+380938767461">+38 (093) 876-74-61</a></p>
+        <div class="also">
+            <!--<form action="">-->
+            <!--<input id="name" class="form-name" type="text" title="" placeholder="Введите имя">-->
+            <!--<input id="email" class="form-name" type="text" title="" placeholder="Введите имя">-->
+            <!--<input id="message" class="form-mes" type="text" title="" placeholder="Ваше сообщение">-->
+            <!--<button type="sendtext" onsubmit="valid()" id="send">Отправить</button>-->
+            <!--</form>-->
+            <!--<form id="callback">-->
+            <!--<input class="mail" name="email" type="email" placeholder="Ваш E-MAIL" required="required" id="email1">-->
+            <!--<input class="message" name="email" type="email" placeholder="Сообщение" required="required" id="message">-->
+            <!--<button id="sendtext" name="sendmail" type="submit">Отправить</button>-->
+            <!--</form>-->
+
+            <form action="" id="comments">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                        <h4> КОНТАКТНИЙ ФОРМУЛЯЛ</h4>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                            <div class="form-group">
+
+                                <div class="col-10">
+                                    <input class="form-control form-left" type="email" placeholder="E-MAIL" name="email2" id="commail">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-10">
+                                    <input class="form-control form-left" type="text" name="name2" placeholder="NAME" id="comname">
+                                </div>
+                            </div>
 
 
 
+                            <div class="form-group">
+
+                                <div class="col-10">
+                                    <input class="form-control form-left" type="text" placeholder="MESSAGE TITLE"  name="title" id="comtitle">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+
+                                <div class="col-10">
+                                    <input class="form-control form-right" type="text" placeholder="YOUR MESSAGE"  name="message" id="commes">
+                                </div>
+                            </div>
+
+                            <p class="but">
+                                <button type="submit" name="comment"  class="btn-comment" id="sendCom">Надіслати</button>
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-wrap-right">
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+
+
+
+
+        </div>
+    </div>
+
+
+</div>
 <div class="clear"></div>
 <div id="footer">
     <div class="container">
@@ -53,12 +149,16 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="menu-down">
                     <ul>
-                        <li class="menu-down-li"><a  href="#">Головна</a></li>
-                        <li class="menu-down-li"><a  href="#">Меню</a></li>
-                        <li class="menu-down-li"><a  href="#">Галерея</a></li>
-                        <li class="menu-down-li"><a  href="#">Бронювання</a></li>
-                        <li class="menu-down-li" ><a href="#">Про нас</a></li>
-                        <li class="menu-down-li" ><a href="#">Контакти</a></li>
+                        <li class="menu-down-li">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="menu-down-li">
+                            <div class="menu-down-a active"><a href="index.html" data-tab="2" ></a>Галерея</div>
+                        </li>
+                        <li class="menu-down-li">
+                            <div class="menu-down-a tabs-header" data-tab="3" >Контакты</div>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="copyright">
@@ -68,6 +168,5 @@
         </div>
     </div>
 </div>
-
 </body>
 </html>

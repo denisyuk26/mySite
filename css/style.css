@@ -5,6 +5,20 @@
   font-family: sans-serif;
   font-size: 100%; }
 
+body {
+  background-image: url("http://wallpapercave.com/wp/Hd7S83Q.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 .bg-black {
   background: #000;
   height: 21px;
@@ -13,21 +27,29 @@
 header #headbody {
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 99;
   height: 100px;
-  background: #797b0f;
-  transition: all ease 2s; }
+  background: lightcoral;
+  transition: all ease 2s;
+  margin-bottom: 60px; }
   header #headbody #menu {
     max-width: 300px;
     width: 100%;
     height: 100vh;
-    background: #797b0f;
+    background: lightcoral;
     position: fixed;
     left: -300px;
     top: 0;
     transition: all ease .4s; }
+    header #headbody #menu .menu-sec {
+      font-size: 26px;
+      padding: 15%;
+      border-bottom: 1px solid blueviolet; }
     header #headbody #menu .togglemenu #menu-close {
-      display: none; }
+      display: none;
+      border-radius: 50%;
+      border: 3px solid lightblue; }
     header #headbody #menu .togglemenu #menu-open {
       display: block; }
     header #headbody #menu .togglemenu #menu-open, header #headbody #menu .togglemenu #menu-close {
@@ -50,12 +72,19 @@ header #headbody {
 
 #enterpage {
   position: relative;
-  background-image: url("../img/bgent.jpg");
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2c/28/ed/2c28ed0bd14e011a8a59b453bc2139eb.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   width: 100%;
   height: 100vh;
-  z-index: 102; }
+  z-index: 102;
+  opacity: 1; }
   #enterpage #welcome {
     position: absolute;
     left: 15%;
@@ -74,7 +103,8 @@ header #headbody {
     #enterpage #welcome #gostart {
       padding: 35px;
       border-radius: 20px;
-      border: none; }
+      border: none;
+      background: lightcoral; }
       #enterpage #welcome #gostart:active {
         text-decoration: none;
         outline: none; }
@@ -94,52 +124,68 @@ header #headbody {
   margin-top: 140px;
   position: relative;
   width: 100%;
-  min-height: 550px;
-  display: none; }
-  #main-cont .tab-h {
+  min-height: 550px; }
+  #main-cont .tabs .tabs-header {
+    position: relative;
+    z-index: 2;
+    padding: 0 10%; }
+  #main-cont .tabs .tab-h {
+    text-align: center;
     display: inline-block;
-    padding: 5px 10px;
-    line-height: 30px;
-    border: 1px solid black;
-    width: 31.1%;
-    margin-left: 17px; }
-  #main-cont .tab-b {
+    margin-bottom: 100px;
+    padding: 2.8%;
+    border-radius: 80px;
+    width: 25%;
+    height: 150px;
+    background: lightblue;
+    font-size: 300%; }
+    #main-cont .tabs .tab-h:hover {
+      border: 3px solid lightcoral; }
+    #main-cont .tabs .tab-h p {
+      padding: 15%; }
+    #main-cont .tabs .tab-h:first-child {
+      float: left; }
+    #main-cont .tabs .tab-h:nth-child(2) {
+      margin: 0 6% 12% 12%; }
+    #main-cont .tabs .tab-h:last-child {
+      float: right;
+      line-height: 1; }
+  #main-cont .tabs .tab-b {
     display: none;
     padding: 20px;
-    border: 1px solid black; }
-    #main-cont .tab-b #slider {
+    border: 1px solid lightcoral; }
+    #main-cont .tabs .tab-b #slider {
       width: 384px;
       height: 128px;
-      border: 5px solid black;
+      border: 5px solid lightcoral;
       margin: 50px auto;
       overflow: hidden; }
-    #main-cont .tab-b #polosa {
+    #main-cont .tabs .tab-b #polosa {
       width: 640px;
       position: relative;
       left: 0;
       transition: all ease 1s; }
-  #main-cont .tabs-body {
+  #main-cont .tabs .tabs-body {
     position: relative;
     top: -1px;
     z-index: 1; }
-    #main-cont .tabs-body .avatar {
+    #main-cont .tabs .tabs-body .avatar {
       max-width: 1200px;
       width: 100%; }
-    #main-cont .tabs-body .aboutbody {
+    #main-cont .tabs .tabs-body .aboutbody {
       max-height: 2000px;
       overflow: hidden;
       height: 110px;
       transition: all ease 1.2s; }
-  #main-cont .tabs-header {
-    position: relative;
-    z-index: 2; }
-  #main-cont .active {
-    border-bottom: 1px solid white;
+  #main-cont .tabs .active {
+    background: lightgreen;
     z-index: 3; }
+  #main-cont #comments .messblock {
+    max-height: 135px;
+    height: 100%; }
 
 #footer {
-  display: none;
-  background: red;
+  background: lightcoral;
   margin-top: 40px; }
   #footer .menu-down {
     margin: 55px auto;
@@ -156,5 +202,9 @@ header #headbody {
       font-size: 14px;
       font-weight: bold;
       line-height: 40px; }
+
+#main-cont-gal {
+  margin-top: 140px;
+  height: 1000px; }
 
 /*# sourceMappingURL=style.css.map */
