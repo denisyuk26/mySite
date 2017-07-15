@@ -19,6 +19,21 @@ body {
   margin-left: 0;
   margin-right: 0; }
 
+#updown {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 104; }
+
+.up {
+  background: red; }
+
+.down {
+  background: blue; }
+
 .bg-black {
   background: #000;
   height: 21px;
@@ -206,5 +221,61 @@ header #headbody {
 #main-cont-gal {
   margin-top: 140px;
   height: 1000px; }
+
+#contactsss {
+  display: none;
+  position: relative;
+  height: 100vh;
+  z-index: 102;
+  /* left: 380px; */
+  width: 100%;
+  background: rgba(15, 15, 15, 0.4); }
+  #contactsss .clos-cont {
+    float: right;
+    margin-right: 20px; }
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 200;
+  transition: 1s all;
+  visibility: visible; }
+  .preloader .loader {
+    width: 75px;
+    height: 75px;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top-color: blue;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: 2s spin infinite linear; }
+  .preloader.done {
+    opacity: 0;
+    visibility: hidden; }
+
+#slider2 {
+  width: 384px;
+  height: 128px;
+  border: 5px solid lightcoral;
+  margin: 50px auto;
+  overflow: hidden; }
+
+#polosa2 {
+  width: 640px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s; }
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
 
 /*# sourceMappingURL=style.css.map */

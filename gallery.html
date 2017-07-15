@@ -21,21 +21,86 @@
 
 </head>
 <body>
+<div id="page-preloader" class="preloader">
+    <div class="loader"></div>
+</div>
+<div id="updown"></div>
+<div id="contactsss">
+    <form action="" id="comments2">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                <h4> КОНТАКТНИЙ ФОРМУЛЯЛ</h4>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
+                    <div class="form-group">
+
+                        <div class="col-10">
+                            <input class="form-control form-left" type="email" placeholder="E-MAIL" name="email2" id="commail2">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="col-10">
+                            <input class="form-control form-left" type="text" name="name2" placeholder="NAME" id="comname2">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <div class="col-10">
+                            <input class="form-control form-left" type="text" placeholder="MESSAGE TITLE"  name="title" id="comtitle2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+
+                        <div class="col-10">
+                            <input class="form-control form-right messblock" type="text" placeholder="YOUR MESSAGE"  name="message" id="commes2">
+                        </div>
+                    </div>
+
+                    <p class="but">
+                        <button type="submit" name="comment"  class="btn-comment" id="sendCom2">Надіслати</button>
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-wrap-right">
+
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <button class="close-cont"> Close </button>
+
+</div>
 <header>
     <div id="headbody">
         <div class="row">
             <div class="col-lg-4">
                 <div id="menu">
                     <ul>
-                        <li class="menu-sec"><a href="index.html">Main</a></li>
-                        <li class="menu-sec"><a href="#">About</a></li>
-                        <li class="menu-sec"><a href="gallery.html">Photo</a></li>
-                        <li class="menu-sec"><a href="#">Contacs</a></li>
+                        <li><div class="menu-sec" ><a href="index.html">Main</a></div></li>
+
+                        <li>
+                            <div class="menu-sec"><a href="gallery.html">Photo</a></div>
+                        </li>
+                        <li>
+                            <a href="#contactsss" class="menu-cont menu-sec" id="menu-cont" onclick="showC()">Contacs</a>
+                        </li>
                     </ul>
                     <div class="togglemenu">
-                        <img src="img/open.png" id="menu-open">
-                        <img src="img/close.png" id="menu-close">
+
+                        <div id="menu-open"><p><img src="img/open.png" alt=""></p></div>
+                        <div id="menu-close"><img src="img/close.png"></div>
                     </div>
                 </div>
             </div>
@@ -43,106 +108,41 @@
         <div class="social"></div>
     </div>
 </header>
+<div class="clear"></div>
 <div id="main-cont">
+    <div id="slider2">
 
-    <div class="tab-b">
-
-        <div id="slider">
-
-
-            <div id="polosa">
-                <img src="img/1.png" alt="">
-                <img src="img/2.png" alt="">
-                <img src="img/3.png" alt="">
-                <img src="img/4.png" alt="">
-                <img src="img/5.png" alt="">
-            </div>
+        <div id="polosa2">
+            <img src="img/1.png" alt="">
+            <img src="img/2.png" alt="">
+            <img src="img/3.png" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/5.png" alt="">
         </div>
+
+    </div>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda beatae eveniet itaque iusto laborum mollitia. Animi atque cum ea eius error fugit laboriosam laudantium, magni nesciunt, quod repellat vel!</p>
-        <p><a href="gallery.html" class="more" id="more" >Подробнее...</a></p>
-    </div>
-    <div class="tab-b">
-        <h1>Мои контакы</h1>
-        <p>E-mail: <a class="contm" href="mailto:sergey.denisyuk@gmail.com">Sergey.denisyuk@gmail.com</a></p>
-        <p>Phone: <a class="contm" href="telto:+380938767461">+38 (093) 876-74-61</a></p>
-        <div class="also">
-            <!--<form action="">-->
-            <!--<input id="name" class="form-name" type="text" title="" placeholder="Введите имя">-->
-            <!--<input id="email" class="form-name" type="text" title="" placeholder="Введите имя">-->
-            <!--<input id="message" class="form-mes" type="text" title="" placeholder="Ваше сообщение">-->
-            <!--<button type="sendtext" onsubmit="valid()" id="send">Отправить</button>-->
-            <!--</form>-->
-            <!--<form id="callback">-->
-            <!--<input class="mail" name="email" type="email" placeholder="Ваш E-MAIL" required="required" id="email1">-->
-            <!--<input class="message" name="email" type="email" placeholder="Сообщение" required="required" id="message">-->
-            <!--<button id="sendtext" name="sendmail" type="submit">Отправить</button>-->
-            <!--</form>-->
 
-            <form action="" id="comments">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
-                        <h4> КОНТАКТНИЙ ФОРМУЛЯЛ</h4>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+  </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="black">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" id="send-res">
 
-                            <div class="form-group">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Добре</button>
 
-                                <div class="col-10">
-                                    <input class="form-control form-left" type="email" placeholder="E-MAIL" name="email2" id="commail">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-
-                                <div class="col-10">
-                                    <input class="form-control form-left" type="text" name="name2" placeholder="NAME" id="comname">
-                                </div>
-                            </div>
-
-
-
-                            <div class="form-group">
-
-                                <div class="col-10">
-                                    <input class="form-control form-left" type="text" placeholder="MESSAGE TITLE"  name="title" id="comtitle">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group">
-
-                                <div class="col-10">
-                                    <input class="form-control form-right" type="text" placeholder="YOUR MESSAGE"  name="message" id="commes">
-                                </div>
-                            </div>
-
-                            <p class="but">
-                                <button type="submit" name="comment"  class="btn-comment" id="sendCom">Надіслати</button>
-                            </p>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-wrap-right">
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </form>
-
-
-
-
-
+            </div>
         </div>
     </div>
-
-
 </div>
-<div class="clear"></div>
+
+
 <div id="footer">
     <div class="container">
         <div class="row">
@@ -153,10 +153,10 @@
                             <a href="index.html">Главная</a>
                         </li>
                         <li class="menu-down-li">
-                            <div class="menu-down-a active"><a href="index.html" data-tab="2" ></a>Галерея</div>
+                            <div class="menu-down-a"><a href="gallery.html">Галерея</a></div>
                         </li>
                         <li class="menu-down-li">
-                            <div class="menu-down-a tabs-header" data-tab="3" >Контакты</div>
+                            <a onclick="showC()" class="menu-cont menu-down-a" href="#contactsss">Контакты</a>
                         </li>
 
                     </ul>
